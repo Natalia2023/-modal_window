@@ -1,0 +1,84 @@
+/* .overley {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0 ,0, 0.5);
+     z-index: 1;
+}
+.modal {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+}
+
+
+.hide {
+    display: none;
+} */
+
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Стилі для затемнення */
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Чорний колір з 50% прозорістю */
+    height: 100%; /* Займає всю висоту екрану */
+    left: 0;
+    position: fixed; /* Фіксуємо позицію */
+    top: 0;
+    width: 100%; /* Займає всю ширину екрану */
+    z-index: 9999; /* Забезпечуємо поверхневість */
+  }
+  
+  /* Стилі для модального вікна */
+  .modal {
+    background-color: #f2f2f2; /* Світло-сірий фон */
+    border-radius: 5px; /* Закруглюємо кути */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тінь */
+    left: 50%; /* Вирівнюємо по центру екрану */
+    position: fixed; /* Фіксуємо позицію */
+    top: 50%; /* Вирівнюємо по центру екрану */
+    transform: translate(-50%, -50%); /* Переміщуємо на половину вліво та половину вверх */
+    z-index: 10000; /* Забезпечуємо поверхневість */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Стилі для кнопки закриття */
+  .close {
+    background-color: #007bff; /* Синій колір */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Білий колір тексту */
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+  
+  /* Стилі для ховання елементів */
+  .hide {
+    display: none;
+  }
+  
+  /* Медіа-запити для покращення адаптивності */
+  @media only screen and (max-width: 600px) {
+    .modal {
+      width: 80%; /* Зменшуємо ширину модального вікна на малих екранах */
+    }
+  }
+  
